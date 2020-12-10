@@ -2,6 +2,8 @@
 
 This is a proof of concept user interface for a immersive real-time communication. It has been built using the graphical User Interface framework for [A-Frame](https://aframe.io) that was developed by Roland Dubois, @rolanddubois - who is also doing interesting work in the area of XR accessibility. The example also leverages a curved type UI developed by Mozilla for the initial layout.
 
+![Personalization XR - POC default](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
+
 Here we aim to demonstrate how user agents may implement Personalization Semantics in XR environments.
 
 - https://w3c.github.io/personalization-semantics/content/
@@ -9,6 +11,10 @@ Here we aim to demonstrate how user agents may implement Personalization Semanti
 - https://www.w3.org/TR/personalization-semantics-requirements-1.0/
 
 For examples of other implementations please see https://github.com/w3c/personalization-semantics/wiki/Implementations-of-Semantics 
+
+For example, when the Symbol control is activated, a Bliss symbol set UI is loaded:
+
+![Personalization XR - POC Bliss Symbol UI](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
 
 
 ## UI Aframe-gui Component framework
