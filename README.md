@@ -125,4 +125,4 @@ The following component uses <code>data-purpose</code>, and <code>data-symbol</c
 			</a-gui-toggle>
 ```
 
-The idea is this POC will demonstrate that if user agents 
+The idea is this POC demonstrates how user agents in XR may implement some of these Personalization Semantics - so rather than behaviours being defined by the author, the can simply be called by the author and implemented by the user agent. This would remove much complexity when building accessible XR experiences.
