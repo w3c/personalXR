@@ -1,6 +1,6 @@
 # Personalization XR Proof of Concept 
 
-This is a proof of concept user interface for a immersive real-time communication. It has been built using the graphical User Interface framework for [A-Frame](https://aframe.io) that was developed by Roland Dubois, @rolanddubois - who is also doing interesting work in the area of XR accessibility. The example also leverages a curved type UI developed by Mozilla for the initial layout.
+This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the graphical User Interface framework for [A-Frame](https://aframe.io) that was developed by Roland Dubois, @rolanddubois - who is also doing interesting work in the area of XR accessibility. The example also leverages a curved type UI developed by Mozilla for the initial layout.
 
 ![Personalization XR - POC default](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
 
@@ -16,6 +16,19 @@ For example, when the Symbol control is activated, a Bliss symbol set UI is load
 
 ![Personalization XR - POC Bliss Symbol UI](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
 
+The default POC controls map to the following Bliss symbols:
+
+- Play - 16200 play-(to) (play + action indicator)
+- Stop - 21841 relay (to stop + to start) - Character (superimposed)
+- Lock - 16704 safe,safely,secure, securely (safety + description indicator)  
+- Camera - 13111 camera (enclosure + light: box that uses the sunlight to record what the eye sees) - Character (superimposed)
+- Phone - 22904 call,telephone,ring-(to) (telephone + action indicator)  
+- Search - 27053 exploration ([contr.] search + new)
+- EQ - 23804 amplifier_(1) (machine + more + sound + intensity) SYMBOL SYNONYM 
+- Star - 17997 Valentine_(card) (paper + love: message of love) 
+- Instant messaging - 24509 short_message_system_(SMS),text_message (letter + telephone) 
+- Wifi - 27156 wireless_connection (signal + digital + minus + fiber) Bliss-word synonym
+
 
 ## UI Aframe-gui Component framework
 
@@ -25,9 +38,9 @@ Examples of the UI component framework are available at:
 
 ## Why A-frame?
 
-We chose to use A-frame, as it used a component type architecture - and renders HTML. The entity component system is also useful, as well as the ability to add various ARIA or other accessibility related semantics in a way that would be familiar to developers.
+We chose to use A-frame, as it uses a component type architecture - and renders HTML. The entity component system is also useful, as well as the ability to add various ARIA or other accessibility related semantics in a way that would be familiar to developers.
 
-THere is also interesting work going on in the A-frame community around accessibilty.
+There is also interesting work going on in the A-frame community around accessibilty.
  
 
 ## Use in your AFrame project
@@ -57,7 +70,7 @@ The webpack-dev-server should now be running at http://localhost:8080
 
 This POC uses some of the aframe-gui componenets as a basis for adding Personalization semantics that are designed to trigger customisations in user agents.
 
-In this example, we have added semantics like data-simplify, data-symbol. Note, any behaviours or customisations need to be hand coded but the idea here in our POC is to illustrate that if these sementics are supported in web content, then user agents can modify that content in particular ways what will meet the needs of people with cognitive disabilities.
+In this example, we have added semantics like <code>data-simplify</code>, <code>data-symbol</code>. Note, any behaviours or customisations need to be hand coded but the idea here in our POC is to illustrate that if these sementics are supported in web content, then user agents can modify that content in particular ways what will meet the needs of people with cognitive disabilities.
 
 For example, the following component is provided in the aframe-gui framework, and it has been customised as shown below.
 
