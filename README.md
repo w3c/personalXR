@@ -21,29 +21,41 @@ The wiring for this is in progress, but you can currently see the suggested defa
 
 https://github.com/RealJoshue108/personalXR/blob/master/examples/POC_personalization_demo_main.html
 
-and the suggested Symbolset UI in here:
+This immersive communication UI has the following controls:
+
+- Start Phone Call
+- Stop Phone Call
+- Lock
+- Start Camera
+- Search Contacts 
+- EQ
+- Like / Star
+- Instant messaging
+- Wifi Connection
+
+as well as an interactive keyboard and text <code>input</code> area.
+
+Pressing the <code>CNTRL</code> key and then selecting the Symbols option will load the suggested Symbol set UI here:
 
 https://github.com/RealJoshue108/personalXR/blob/master/examples/POC_personalization_demo_symbols.html
 
 Activiating the UI toggles will be triggered by JavaScript.
 
-For example, when the Symbol control is activated, a Bliss symbol set UI will be loaded:
+For example, when the Symbol control is activated, a Bliss symbol set UI will be loaded, replacing the default:
 
 ![Personalization XR - POC Bliss Symbol UI](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
 
-The default POC controls map to the following Bliss symbols:
+The default immersive communication UI controls listed above map to the following Bliss symbols:
 
-- Play - 16200 play-(to) (play + action indicator)
-- Stop - 21841 relay (to stop + to start) - Character (superimposed)
+- Start Phone Call - 22904 call,telephone,ring-(to) (telephone + action indicator)  
+- Stop Phone Call - 21841 relay (to stop + to start) - Character (superimposed)
 - Lock - 16704 safe,safely,secure, securely (safety + description indicator)  
-- Camera - 13111 camera (enclosure + light: box that uses the sunlight to record what the eye sees) - Character (superimposed)
-- Phone - 22904 call,telephone,ring-(to) (telephone + action indicator)  
-- Search - 27053 exploration ([contr.] search + new)
+- Start Camera - 13111 camera (enclosure + light: box that uses the sunlight to record what the eye sees) - Character (superimposed)
+- Search Contacts - 27053 exploration ([contr.] search + new)
 - EQ - 23804 amplifier_(1) (machine + more + sound + intensity) SYMBOL SYNONYM 
-- Star - 17997 Valentine_(card) (paper + love: message of love) 
+- Like / Star - 17997 Valentine_(card) (paper + love: message of love) 
 - Instant messaging - 24509 short_message_system_(SMS),text_message (letter + telephone) 
-- Wifi - 27156 wireless_connection (signal + digital + minus + fiber) Bliss-word synonym
-
+- Wifi Connection - 27156 wireless_connection (signal + digital + minus + fiber) Bliss-word synonym
 
 
 ## UI Aframe-gui Component framework
