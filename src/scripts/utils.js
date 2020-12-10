@@ -1,1 +1,0 @@
-window.nearestPow2 = function ( n ) { Math.pow( 2, Math.round( Math.log( n ) / Math.log( 2 ) ) ) } 
