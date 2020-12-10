@@ -115,7 +115,7 @@ The following component uses <code>data-simplification</code>, and <code>data-pu
 				onclick=" "
 				value="Simple"
 				font-family="Arial"
-        		font-size="80px"
+        			font-size="80px"
 				margin="0 0 0.05 0"
 				>
 			</a-gui-toggle>
@@ -136,7 +136,7 @@ The following component uses <code>data-purpose</code>, and <code>data-symbol</c
 				onclick=""
 				value="Symbols"
 				font-family="Arial"
-        		font-size="80px"
+        			font-size="80px"
 				margin="0 0 0.05 0"
 				>
 			</a-gui-toggle>
