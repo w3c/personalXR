@@ -105,8 +105,8 @@ The following component uses <code>data-simplification</code>, and <code>data-pu
 
 ```html
 <a-gui-toggle simply
-				data-simplification="critical"
-				data-purpose="simplify"
+			data-simplification="critical"
+			data-purpose="simplify"
 				role="switch"
 				aria-checked="false"
 				state="off"
@@ -125,7 +125,7 @@ The following component uses <code>data-simplification</code>, and <code>data-pu
 The following component uses <code>data-purpose</code>, and <code>data-symbol</code> sematics, along with some ARIA role, state information, to load a Bliss symbol set, to replace the default user interface.
 
 ```html
-			<a-gui-toggle symbols
+<a-gui-toggle symbols
 			data-purpose="symbol-set"
 			data-symbol="17978"
 				role="switch"
