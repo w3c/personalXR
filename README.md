@@ -12,7 +12,22 @@ Here we aim to demonstrate how user agents may implement Personalization Semanti
 
 For examples of other implementations please see https://github.com/w3c/personalization-semantics/wiki/Implementations-of-Semantics 
 
-For example, when the Symbol control is activated, a Bliss symbol set UI is loaded:
+
+### How it works
+
+Pressing the <code>CNTRL</code> key will load the personalization widget. This was two toggles. One to simply the UI, and another to load the symbolset.
+
+The wiring for this is in progress, but you can currently see the suggested default UI here:
+
+https://github.com/RealJoshue108/personalXR/blob/master/examples/POC_personalization_demo_main.html
+
+and the suggested Symbolset UI in here:
+
+https://github.com/RealJoshue108/personalXR/blob/master/examples/POC_personalization_demo_symbols.html
+
+Activiating the UI toggles will be triggered by JavaScript.
+
+For example, when the Symbol control is activated, a Bliss symbol set UI will be loaded:
 
 ![Personalization XR - POC Bliss Symbol UI](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
 
@@ -28,6 +43,7 @@ The default POC controls map to the following Bliss symbols:
 - Star - 17997 Valentine_(card) (paper + love: message of love) 
 - Instant messaging - 24509 short_message_system_(SMS),text_message (letter + telephone) 
 - Wifi - 27156 wireless_connection (signal + digital + minus + fiber) Bliss-word synonym
+
 
 
 ## UI Aframe-gui Component framework
