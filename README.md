@@ -71,21 +71,18 @@ We chose to use A-frame, as it uses a component type architecture - and renders 
 There is also interesting work going on in the A-frame community around accessibilty.
  
 
-## Use in your AFrame project
+## Set up
 
-Include the following Javascript in the head of the page containing your AFrame scene:
+Clone into your Git directory using:
 
-`https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js
-`
-## Building
+https://github.com/RealJoshue108/personalXR.git
 
-Run the following to build to the examples/js folder:
-
-`npm run dist-example`
-
-`npm run dist-example-min`
 
 ## Run locally
+
+Using bash of your tool of choice, install npm
+
+`npm install`
 
 Run the following start the webpack-dev-server:
 
