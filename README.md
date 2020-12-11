@@ -150,7 +150,7 @@ The following component uses <code>data-simplification</code>, and <code>data-pu
 
 ```
 
-The following component uses <code>data-purpose</code>, and <code>data-symbol</code> sematics, along with some ARIA role, state information, to load a Bliss symbol set, to replace the default user interface.
+The following component uses <code>data-purpose</code>, and <code>data-symbol</code> sematics, along with some ARIA role, state information, to load a <a href="https://www.blissymbolics.org/index.php/symbol-files">Bliss symbol set</a>, to replace the default user interface.
 
 ```html
 <a-gui-toggle symbols
