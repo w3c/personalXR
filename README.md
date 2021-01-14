@@ -1,6 +1,6 @@
 # Personalization XR Proof of Concept 
 
-This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the graphical User Interface framework for [A-Frame](https://aframe.io) that was developed by Roland Dubois, @rolanddubois. The example also leverages a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
+This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the [Graphical User Interface framework for A-Frame](https://github.com/rdub80/aframe-gui) that was developed by Roland Dubois, @rolanddubois. The example also leverages a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
 
 ![Personalization XR - POC default style](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
 
@@ -93,9 +93,9 @@ The webpack-dev-server should now be running at http://localhost:8080
 
 ## Personalization Components
 
-This POC uses some of the aframe-gui componenets as a basis for adding Personalization semantics that are designed to trigger customisations in user agents.
+This demo uses some of the aframe-gui components as a basis for adding Personalization semantics that are designed to trigger customisations in user agents.
 
-In this example, we have added semantics like <code>data-simplify</code>, <code>data-symbol</code>. Note, any behaviours or customisations need to be hand coded but the idea here in our POC is to illustrate that if these sementics are supported in web content, then user agents can modify that content in particular ways what will meet the needs of people with cognitive disabilities.
+In this example, we have added semantics like <code>data-simplify</code>, <code>data-symbol</code>. Note, any behaviours or customisations need to be hand coded but the idea here in our demo is to illustrate that if these sementics are supported in web content, then user agents can modify that content in particular ways what will meet the needs of people with cognitive disabilities.
 
 For example, the following component is provided in the aframe-gui framework, and it has been customised as shown below.
 
@@ -135,7 +135,7 @@ The following component uses <code>data-simplification</code>, and <code>data-pu
 				role="switch"
 				aria-checked="false"
 				state="off"
-				aria-label="Simplication Control"
+				aria-label="Simplification Control"
 				width="2.2" height="0.75"
 				onclick=" "
 				value="Simple"
@@ -166,7 +166,7 @@ The following component uses <code>data-purpose</code>, and <code>data-symbol</c
 			</a-gui-toggle>
 ```
 
-The idea is this POC demonstrates how user agents in XR may implement some of these Personalization Semantics - so rather than behaviours being defined by the author, the can simply be called by the author and implemented by the user agent. This would remove much complexity when building accessible XR experiences.
+The idea is this demo will show how user agents in XR may implement some of these Personalization Semantics - so rather than behaviours being defined by the author, they can simply be called in code by the author and implemented by the user agent. This would remove much complexity when building accessible XR experiences.
 
 ### Funders
 
