@@ -2,7 +2,7 @@
 <html>
 <head>
   	<meta charset="utf-8">
-  	<title>A-Frame Curved GUI - Personalization demo </title>
+  	<title>A-Frame Cognitive POC - Personalization demo </title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<style type="text/css">
 		@font-face{
@@ -276,7 +276,7 @@
 				aria-label="Load Bliss Symbol set"
 				state="off"
 				width="2.2" height="0.75"
-				onclick=""
+				onclick="swapBliss"
 				value="Symbols"
 				font-family="Arial"
         		font-size="80px"
@@ -949,6 +949,47 @@
 		}
 
 			//Toggle Personalization controls
+
+			//Toggle Personalization controls
+
+
+
+	window.swapBliss = function() {
+		
+// Canvas redraw code
+
+// 		var loadImage = function (url, ctx) {
+// 			var bliss_img = document.getElementById("ui2");
+//   var img = new Image();
+//   img.src = '/images/bliss_ui_call_2.png';
+//   img.onload = function () { 
+//     ctx.drawImage(img, 0, 0);
+//   		}
+// 	}
+// }
+
+
+// Working with 304 Not Modified error
+
+	// 	var bliss_img = document.getElementById("ui2");
+	// 	document.getElementById("ui2").src = document.getElementById("ui2").src;
+	// 	bliss_img.src = "/images/bliss_ui_call_2.png" ;
+	// }
+
+// Working HTTP request
+
+var timestamp = new Date().getTime();     
+     
+var bliss_img = document.getElementById("ui2");     
+     
+bliss_img.src = "/images/bliss_ui_call_2.png?t=" + timestamp;   
+
+{
+				window.old_timestamp = event.timeStamp;
+			}
+
+}
+
 
 
 
