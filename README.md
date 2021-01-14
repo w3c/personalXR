@@ -1,6 +1,6 @@
 # Personalization XR Proof of Concept 
 
-This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the [Graphical User Interface framework for A-Frame](https://github.com/rdub80/aframe-gui) that was developed by Roland Dubois, @rolanddubois. The example also leverages a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
+This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the [Graphical User Interface framework for A-Frame](https://github.com/rdub80/aframe-gui) that was developed by Roland Dubois, @rdub80. The example also leverages a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
 
 ![Personalization XR - POC default style](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
 
