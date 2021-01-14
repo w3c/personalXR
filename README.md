@@ -124,7 +124,7 @@ For example, the following component is provided in the aframe-gui framework, an
 | margin           | Margin around item                                        | 0 0 0 0        |
 
 
-#### Example of componenent customised with Personalization Semantics
+#### Example of component customised with Personalization Semantics
 
 The following component uses <code>data-simplification</code>, and <code>data-purpose</code> semantics, along with some ARIA role, state information - when activated the UI will be simplified by removing some controls.
 
