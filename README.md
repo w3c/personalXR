@@ -2,7 +2,7 @@
 
 This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the [Graphical User Interface framework for A-Frame](https://github.com/rdub80/aframe-gui) that was developed by Roland Dubois, @rdub80. The example also leverages a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
 
-![Personalization XR - POC default style](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
+![Screenshot of demo default style. A futuristic communication interface with a large curved screen, and a range of UI controls for making and managing calls and other communications.](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
 
 Here we aim to demonstrate how user agents may implement Personalization Semantics in XR environments.
 
@@ -43,7 +43,7 @@ Activiating the UI toggles will be triggered by JavaScript.
 
 For example, when the Symbol control is activated, a Bliss symbol set UI will be loaded, replacing the default:
 
-![Personalization XR - POC Bliss Symbol UI](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
+![Screenshot of demo futuristic communication interface with a large curved screen, and a range of Bliss symbols to represent controls for making and managing calls and other communications.](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
 
 The default immersive communication UI controls listed above map to the following Bliss symbols:
 
