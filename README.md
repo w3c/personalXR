@@ -168,6 +168,8 @@ The following component uses <code>data-purpose</code>, and <code>data-symbol</c
 
 The idea is this demo will show how user agents in XR may implement some of these Personalization Semantics - so rather than behaviours being defined by the author, they can simply be called in code by the author and implemented by the user agent. This would remove much complexity when building accessible XR experiences.
 
-### Funders
+### Funders and acknowledgements
 
 This work is supported by the [EC-funded WAI-Guide Project](https://www.w3.org/WAI/about/projects/wai-guide/).
+
+Blissymbol resources based on the Blissymbolics Communication International Authorized Vocabulary (BCI-AV) are licensed under a [Creative Commons Attribution-Share Alike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/"). 
