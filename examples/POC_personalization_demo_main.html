@@ -7,14 +7,14 @@
 	<style type="text/css">
 		@font-face{
 			font-family:"Ionicons";
-			
+
 			src:url("assets/fonts/ionicons.eot?v=2.0.1");
 			src:url("assets/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"),url("assets/fonts/ionicons.ttf?v=2.0.1") format("truetype"),url("assets/fonts/ionicons.woff?v=2.0.1") format("woff"),url("assets/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
-			
+
 			font-weight:normal;
 			font-style:normal
 		}
-		body{font-family:Ionicons;} 
+		body{font-family:Ionicons;}
 		.visuallyhidden {
 			position: absolute;
 			display: block;
@@ -162,16 +162,20 @@
 			<img id="mozvr" src="/images/dome_backg.jpeg">
 
 			<!-- New Images for POC -->
-			
-			<img id="ui1" src="/images/new_ui_search.png">
+
 			<img id="ui2" src="/images/new_ui_call.png">
+			<img id="ui2bliss" src="/images/bliss_ui_call.png">
+
+			<img id="ui1" src="/images/new_ui_search.png">
+			<img id="ui1bliss" src="/images/bliss_ui_call_2.png">
+
 			<img id="ui3" src="/images/call_main.png">
 		</a-assets>
 <!-- New Curved UI for POC -->
-	
+
 <a-curvedimage src="#ui3" radius="5.7" theta-length="180" height="9" opacity=".7" rotation="0 90 0" scale="1.2 1.2 1.2"></a-curvedimage>
-<a-curvedimage src="#ui1" radius="5.7" theta-length="72" height="3.6" rotation="0 70 0" position="1.8 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
-<a-curvedimage src="#ui2" radius="5.7" theta-length="70" height="3.02" rotation="0 -130 0" position="-1 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
+<a-curvedimage id="search-panel" src="#ui1" radius="5.7" theta-length="72" height="3.6" rotation="0 70 0" position="1.8 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
+<a-curvedimage id="call-panel" src="#ui2" radius="5.7" theta-length="70" height="3.02" rotation="0 -130 0" position="-1 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
 
    <a-sky src="images/dome_backg.jpeg" color="#ECECEC"></a-sky>
 
@@ -251,7 +255,7 @@
 			flex-direction="column" justify-content="center" align-items="normal" component-padding="0.1" opacity="0.7" width="3" height="3"
 	aria-label="Personalization Control widget" role="nav"
 			position="4.5 -.5 0" rotation="0 0 0"  >
-			
+
 <a-gui-toggle simply
 				data-simplification="critical"
 				data-purpose="simplify"
@@ -265,7 +269,7 @@
 				font-family="Arial"
         		font-size="80px"
 				margin="0 0 0.05 0"
-			
+
 			>
 			</a-gui-toggle>
 
@@ -286,8 +290,6 @@
 			</a-gui-toggle>
 
 
-
-			</a-gui-toggle>
 
 
 		</a-gui-flex-container>
@@ -808,7 +810,7 @@
 
 	<script type="text/javascript">
 
-	
+
 		window.switchKb = function() {
 		    var keyboardAbcLow = document.getElementById("keyboardAbcLow");
 		    var keyboardAbcHigh = document.getElementById("keyboardAbcHigh");
@@ -955,41 +957,44 @@
 
 
 	window.swapBliss = function() {
-		
-// Canvas redraw code
+				const callPanel = document.getElementById('call-panel')
+				callPanel.setAttribute('src', '#ui2bliss')
 
-// 		var loadImage = function (url, ctx) {
-// 			var bliss_img = document.getElementById("ui2");
-//   var img = new Image();
-//   img.src = '/images/bliss_ui_call_2.png';
-//   img.onload = function () { 
-//     ctx.drawImage(img, 0, 0);
-//   		}
-// 	}
-// }
-
-
-// Working with 304 Not Modified error
-
-	// 	var bliss_img = document.getElementById("ui2");
-	// 	document.getElementById("ui2").src = document.getElementById("ui2").src;
-	// 	bliss_img.src = "/images/bliss_ui_call_2.png" ;
-	// }
-
-// Working HTTP request
-
-var timestamp = new Date().getTime();     
-     
-var bliss_img = document.getElementById("ui2");     
-     
-bliss_img.src = "/images/bliss_ui_call_2.png?t=" + timestamp;   
-
-{
-				window.old_timestamp = event.timeStamp;
+				const searchPanel = document.getElementById('search-panel')
+				searchPanel.setAttribute('src', '#ui1bliss')
 			}
 
-}
+				/*
+				// Canvas redraw code
+				var loadImage = function (url, ctx) {
+							var bliss_img = document.getElementById("ui2");
+							var img = new Image();
+							img.src = '/images/bliss_ui_call_2.png';
+							img.onload = function () {
+										ctx.drawImage(img, 0, 0);
+									}
+						}
 
+				// Working with 304 Not Modified error
+
+				var bliss_img = document.getElementById("ui2");
+				document.getElementById("ui2").src = document.getElementById("ui2").src;
+				bliss_img.src = "/images/bliss_ui_call_2.png" ;
+
+				// Working HTTP request
+
+				var timestamp = new Date().getTime();
+
+				var bliss_img = document.getElementById("ui2");
+
+				bliss_img.src = "/images/bliss_ui_call_2.png?t=" + timestamp;
+
+				{
+							window.old_timestamp = event.timeStamp;
+						}
+
+}
+*/
 
 
 
