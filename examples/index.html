@@ -67,24 +67,24 @@
 
 			<!-- New Images for POC -->
 
-			<img id="ui2" src="/images/new_ui_call.png">
-			<img id="ui2bliss" src="/images/bliss_ui_call.png">
+			<img id="call-panel-image" src="/images/new_ui_call.png">
+			<img id="call-panel-image-bliss" src="/images/bliss_ui_call.png">
 
-			<img id="ui1" src="/images/new_ui_search.png">
-			<img id="ui1bliss" src="/images/bliss_ui_call_2.png">
+			<img id="search-panel-image" src="/images/new_ui_search.png">
+			<img id="search-panel-image-bliss" src="/images/bliss_ui_call_2.png">
 
-			<img id="ui3" src="/images/call_main.png">
+			<img id="main-panel-image" src="/images/call_main.png">
 		</a-assets>
 
 
 		<!-- New Curved UI for POC -->
 
-		<a-curvedimage src="#ui3" radius="5.7" theta-length="180" height="9" opacity=".7" rotation="0 90 0"
+		<a-curvedimage src="#main-panel-image" radius="5.7" theta-length="180" height="9" opacity=".7" rotation="0 90 0"
 			scale="1.2 1.2 1.2"></a-curvedimage>
-		<a-curvedimage id="search-panel" src="#ui1" radius="5.7" theta-length="72" height="3.6" rotation="0 70 0"
-			position="1.8 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
-		<a-curvedimage id="call-panel" src="#ui2" radius="5.7" theta-length="70" height="3.02" rotation="0 -130 0"
-			position="-1 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
+		<a-curvedimage id="search-panel" src="#search-panel-image" radius="5.7" theta-length="72" height="3.6"
+			rotation="0 70 0" position="1.8 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
+		<a-curvedimage id="call-panel" src="#call-panel-image" radius="5.7" theta-length="70" height="3.02"
+			rotation="0 -130 0" position="-1 -1 0" scale="0.8 0.8 0.8"></a-curvedimage>
 
 		<a-sky src="images/dome_backg.jpeg" color="#ECECEC"></a-sky>
 
@@ -146,7 +146,7 @@
 					</a-gui-toggle>
 
 					<a-gui-toggle symbols data-action="symbol-set" role="switch" aria-checked="false"
-						aria-label="Load Bliss Symbol set" state="off" width="2.2" height="0.75" onclick="swapBliss"
+						aria-label="Load Bliss Symbol set" state="off" width="2.2" height="0.75" onclick="swapBliss(this);"
 						value="Symbols" font-family="Arial" font-size="80px" margin="0 0 0.05 0">
 					</a-gui-toggle>
 

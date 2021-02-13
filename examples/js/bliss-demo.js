@@ -8,10 +8,12 @@ window.enter = function() {
 
 // Toggle Personalization controls
 
-window.swapBliss = function() {
-	const callPanel = document.getElementById('call-panel')
-	callPanel.setAttribute('src', '#ui2bliss')
-
-	const searchPanel = document.getElementById('search-panel')
-	searchPanel.setAttribute('src', '#ui1bliss')
+window.swapBliss = function(toggle) {
+	const isChecked = toggle.getAttribute('aria-checked') === 'true'
+	for (const panelId of ['call-panel', 'search-panel']) {
+		const panel = document.getElementById(panelId)
+		const newImageRef = '#' + panelId + '-image' + (isChecked ? '' : '-bliss')
+		panel.setAttribute('src', newImageRef)
+		toggle.setAttribute('aria-checked', isChecked ? 'false' : 'true')
+	}
 }
