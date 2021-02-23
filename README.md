@@ -1,8 +1,8 @@
 # Personalization XR Proof of Concept 
 
-This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the [Graphical User Interface framework for A-Frame](https://github.com/rdub80/aframe-gui) that was developed by Roland Dubois, @rdub80. The example also leverages a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
+This is a proof of concept user interface for a immersive real-time communication UI. It has been built using the [Graphical User Interface framework for A-Frame](https://github.com/rdub80/aframe-gui) that was developed by Roland Dubois, @rdub80. The example also uses a  [curved image developed by Mozilla](https://aframe.io/aframe/examples/showcase/curved-mockups/) for the initial layout.
 
-![Screenshot of demo default style. A futuristic communication interface with a large curved screen, and a range of UI controls for making and managing calls and other communications.](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
+![Prototype of default state of futuristic communication interface with a large curved screen, and a range of UI controls for making and managing calls and other communications.](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_default.png)
 
 Here we aim to demonstrate how user agents may implement Personalization Semantics in XR environments.
 
@@ -15,11 +15,7 @@ For examples of other implementations please see https://github.com/w3c/personal
 
 ### How it works
 
-Pressing the <code>CNTRL</code> key will load the personalization widget. This was two toggles. One to simply the UI, and another to load the symbolset.
-
-The wiring for this is in progress, but you can currently see the suggested default UI here:
-
-https://github.com/RealJoshue108/personalXR/blob/master/examples/POC_personalization_demo_main.html
+Pressing the <code>CNTRL</code> key will load the personalization widget. This was two toggles. One to simplify the UI, and another to load the symbolset.
 
 This immersive communication UI has the following controls:
 
@@ -35,15 +31,14 @@ This immersive communication UI has the following controls:
 
 as well as an interactive keyboard and text <code>input</code> area.
 
-Pressing the <code>CNTRL</code> key and then selecting the Symbols option will load the suggested Symbol set UI here:
+Pressing the <code>CNTRL</code> key and then selecting the Symbols option will load the suggested Symbol set:
 
-https://github.com/RealJoshue108/personalXR/blob/master/examples/POC_personalization_demo_symbols.html
 
-Activiating the UI toggles will be triggered by JavaScript.
+Activating the UI toggles will be triggered by JavaScript.
 
 For example, when the Symbol control is activated, a Bliss symbol set UI will be loaded, replacing the default:
 
-![Screenshot of demo futuristic communication interface with a large curved screen, and a range of Bliss symbols to represent controls for making and managing calls and other communications.](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
+![Demo futuristic immersive communication interface with a large curved screen, and a range of Bliss symbols to represent controls for making and managing calls and other communications.](https://github.com/RealJoshue108/personalXR/blob/master/examples/images/POC_symbols.png) 
 
 The default immersive communication UI controls listed above map to the following Bliss symbols:
 
@@ -68,7 +63,7 @@ Examples of the UI component framework are available at:
 
 We chose to use A-frame, as it uses a component type architecture - and renders HTML. The entity component system is also useful, as well as the ability to add various ARIA or other accessibility related semantics in a way that would be familiar to developers.
 
-There is also interesting work going on in the A-frame community around accessibilty.
+There is also interesting work going on in the A-frame community around accessibility.
  
 
 ## Set up
@@ -95,7 +90,7 @@ The webpack-dev-server should now be running at http://localhost:8080
 
 This demo uses some of the aframe-gui components as a basis for adding Personalization semantics that are designed to trigger customisations in user agents.
 
-In this example, we have added semantics like <code>data-simplify</code>, <code>data-symbol</code>. Note, any behaviours or customisations need to be hand coded but the idea here in our demo is to illustrate that if these sementics are supported in web content, then user agents can modify that content in particular ways what will meet the needs of people with cognitive disabilities.
+In this example, we have added semantics like <code>data-simplify</code>, <code>data-symbol</code>. Note, any behaviours or customisations need to be hand coded but the idea here in our demo is to illustrate that if these semantics are supported in web content, then user agents can modify that content in particular ways what will meet the needs of people with cognitive disabilities.
 
 For example, the following component is provided in the aframe-gui framework, and it has been customised as shown below.
 
@@ -147,7 +142,7 @@ The following component uses <code>data-simplification</code>, and <code>data-pu
 
 ```
 
-The following component uses <code>data-purpose</code>, and <code>data-symbol</code> sematics, along with some ARIA role, state information, to load a <a href="https://www.blissymbolics.org/index.php/symbol-files">Bliss symbol set</a>, to replace the default user interface.
+The following component uses <code>data-purpose</code>, and <code>data-symbol</code> semantics, along with some ARIA role, state information, to load a <a href="https://www.blissymbolics.org/index.php/symbol-files">Bliss symbol set</a>, to replace the default user interface.
 
 ```html
 <a-gui-toggle symbols
@@ -173,3 +168,5 @@ The idea is this demo will show how user agents in XR may implement some of thes
 This work is supported by the [EC-funded WAI-Guide Project](https://www.w3.org/WAI/about/projects/wai-guide/).
 
 Blissymbol resources based on the Blissymbolics Communication International Authorized Vocabulary (BCI-AV) are licensed under a [Creative Commons Attribution-Share Alike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/"). 
+
+Many thanks to Matthew Tylee Atkinson @maatk (APA) for review and scripting assistance.
